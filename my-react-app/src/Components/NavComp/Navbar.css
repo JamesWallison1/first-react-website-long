@@ -1,0 +1,74 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    gap: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 2rem;
+    padding: 5px;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(232, 229, 228, 0.5);
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 85%;
+    width: 90px;
+    background-color: white;
+    z-index: -1;
+    border-radius: 2rem;
+    top: 50%;
+    left: var(--left);
+    transform: translate(0, -50%);
+    
+}
+
+.navbar-container > *{
+    cursor: pointer;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.shop{
+    width: fit-content;
+    position: fixed;
+    z-index: 1000;
+    border: 1px black solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    transition: all 0.2s ease;
+    user-select: none;
+    height: fit-content;
+    transition: all 0.3s ease;
+}
+
+.shop img{
+    width: 12px;
+    height: 12px;
+    filter: invert(1);
+}
+
+.shop:active{
+    bottom: -1.5px;
+}
