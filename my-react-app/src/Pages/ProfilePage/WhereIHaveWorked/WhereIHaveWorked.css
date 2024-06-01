@@ -1,0 +1,8 @@
+.about-para-working{
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 1rem;
+    font-size: 15px;
+    background-color: rgba(232, 229, 228, 0.5);
+    margin: 0 auto;
+}

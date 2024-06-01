@@ -1,0 +1,55 @@
+.copy-right-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.right-copy-right-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-copy-right-container div{
+    cursor: pointer;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.right-copy-right-container div:hover{
+    color: rgb(101, 101, 101);
+}
+
+.left-copy-right-container svg{
+    width: 30px !important;
+    stroke: black !important;
+    stroke-width: 80px;
+    transition: ease-in-out 0.4s;
+    animation: rotate 2.5s infinite;
+}
+
+.left-copy-right-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        stroke-width: 80px;
+    }
+    50%{
+        transform: rotate(90deg);
+        stroke-width: 150px;
+    }
+    75%{
+        transform: rotate(180deg);
+        stroke-width: 30px;
+    }
+    100%{
+        transform: rotate(360deg);
+        stroke-width: 80px;
+    }
+}

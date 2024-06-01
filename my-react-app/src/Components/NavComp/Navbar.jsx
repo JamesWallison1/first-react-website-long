@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Navbar.css'
 import star from '../../assets/Images/theStar.svg'
+import { Link } from 'react-router-dom';
 
 
 function Navbar(){
@@ -29,9 +30,9 @@ function Navbar(){
     return(
         <>
             <div className="navbar-container" style={{'--left': section.left}}>
-                <div onClick={setPosHome}>Home</div>
-                <div onClick={setPosProfile}>Profile</div>
-                <div onClick={setPosContact}>Contact</div>
+                <Link to="/"><div onClick={setPosHome}>Home</div></Link>
+                <Link to="/profile"><div onClick={setPosProfile}>Profile</div></Link>
+                <Link to="/contact"><div onClick={setPosContact}>Contact</div></Link>
             </div>
 
             <footer className="shop">

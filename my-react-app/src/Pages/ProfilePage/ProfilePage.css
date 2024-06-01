@@ -1,0 +1,67 @@
+.profile-page-container{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#hey-oli{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    font-size: 4.5rem;
+    margin-top: 3em;
+    margin-bottom: 100px;
+}
+
+.product-img-container img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: filter 0.5s;
+    user-select: none;
+    z-index: -1;
+}
+
+.Working-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 50px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.who-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40px;
+    row-gap: 50px;
+}
+
+@media screen and (max-width: 450px) {
+    .product-img-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+       
+    }
+    .who-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Working-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #hey-oli{
+        font-size: 3rem;
+        width: fit-content;
+        text-align: center;
+    }
+}

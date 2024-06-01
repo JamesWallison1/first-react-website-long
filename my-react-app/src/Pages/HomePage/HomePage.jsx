@@ -1,17 +1,17 @@
-import Navbar from "./Components/NavComp/Navbar.jsx"
-import ProductDes from "./Components/ProductDesComp/ProductDes.jsx";
-import ProductImg from "./Components/ProductImgComp/ProductImg.jsx";
-import ProductVideo from "./Components/ProductVideo/ProductVideo.jsx";
-import videoNum1 from './assets/Videos/the-spinning-thing.mp4';
-import ohSupply from './assets/Videos/oh-supply.mp4';
-import NYCB from './assets/Videos/NYCB.mp4'
-import ProductImgLock from "./Components/ProductImgComp/ProductImgLock.jsx";
-import './Website.css'
+import ProductDes from "../../Components/ProductDesComp/ProductDes.jsx";
+import ProductImg from "../../Components/ProductImgComp/ProductImg.jsx";
+import ProductVideo from "../../Components/ProductVideo/ProductVideo.jsx";
+import videoNum1 from '../../assets/Videos/the-spinning-thing.mp4';
+import ohSupply from '../../assets/Videos/oh-supply.mp4';
+import NYCB from '../../assets/Videos/NYCB.mp4'
+import ProductImgLock from "../../Components/ProductImgComp/ProductImgLock.jsx";
+import FooterComp from "../../Components/FooterComp/FooterComp.jsx";
+import CopyRight from "../../Components/CopyRightComp/CopyRight.jsx";
+import './HomePage.css'
 
-function Website(){
+function HomePage(){
     return(
         <>
-            <Navbar/>
             <ProductDes/>
             <div className="product-img-container">
                 <ProductImg url="https://framerusercontent.com/images/kfr022WaJ8YJUyZFmdwCB3pXhs.jpg?scale-down-to=1024" alt="Aire"/>
@@ -42,8 +42,11 @@ function Website(){
                 <ProductImgLock url='https://framerusercontent.com/images/hQVBeiDNGU2TfeDJALuhawlcto.jpg?scale-down-to=1024' alt="Baselworld"/>
                 <ProductVideo videoUrl={NYCB} alt='NYCB'/>
             </div>
+
+            <FooterComp/>
+            <CopyRight/>
         </>
     );
 }
 
-export default Website
+export default HomePage

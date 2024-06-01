@@ -72,3 +72,8 @@
 .shop:active{
     bottom: -1.5px;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}

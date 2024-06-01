@@ -1,0 +1,24 @@
+.footer-container{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: fit-content;
+}
+
+.footer-container h1, .footer-container p{
+    font-size: 2.5rem;
+    margin: 10px;
+    padding: 0px;
+}
+
+.footer-container p{
+    color: rgb(101, 101, 101);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.footer-container p:hover{
+    color: rgba(101, 101, 101, 50%);
+}
